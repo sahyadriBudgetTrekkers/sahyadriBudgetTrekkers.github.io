@@ -1,0 +1,151 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h5 {
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    position: sticky; /* Keeps the header fixed at the top */
+    top: 0; /* Position at the top of the viewport */
+    z-index: 1000; /* Ensures the header is above all other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.95); /* Light background with slight transparency */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem; /* Padding for the navbar */
+}
+
+/* Navbar brand */
+.navbar-brand {
+    display: flex; /* Align logo and text */
+    align-items: center; /* Center vertically */
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjust logo height */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Navbar links */
+.nav-link {
+    margin: 0 15px; /* Space between links */
+    font-weight: bold; /* Bold links for better visibility */
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Change link color on hover */
+}
+
+/* Active link styling */
+.nav-link.active {
+    color: #0056b3; /* Highlight active link */
+    font-weight: bold; /* Bold active link */
+}
+/* Slider Styles */
+.carousel-inner img {
+    height: 400px;
+}
+
+/* Trek Cards Styles */
+.trek-card {
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.trek-card:hover {
+    transform: scale(1.05);
+}
+
+.trek-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.trek-card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.more-info {
+    margin-top: 10px;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Modal Styles */
+.modal-header, .modal-footer {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+}
