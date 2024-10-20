@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahyadri Budget Trekkers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero-section {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .trek-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sahyadri Trekkers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Upcoming Treks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Explore the Sahyadris with Us!</h1>
+        <p>Join us on budget-friendly treks and discover the beauty of Maharashtra’s majestic mountains.</p>
+        <a href="#treks" class="btn btn-primary">View Upcoming Treks</a>
+    </section>
+
+    <!-- Trek Cards Section -->
+    <section id="treks" class="container mt-5">
+        <h2 class="text-center mb-4">Upcoming Treks</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card trek-card mb-4">
+                    <img src="https://example.com/mangi-tungi.jpg" class="card-img-top" alt="Mangi Tungi Trek">
+                    <div class="card-body">
+                        <h5 class="card-title">Mangi Tungi Trek</h5>
+                        <p class="card-text">Join us for a scenic trek to Mangi Tungi on 8th Nov. Experience breathtaking views!</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card trek-card mb-4">
+                    <img src="https://example.com/harishchandragad.jpg" class="card-img-top" alt="Harishchandragad Trek">
+                    <div class="card-body">
+                        <h5 class="card-title">Harishchandragad Trek</h5>
+                        <p class="card-text">Explore the historic Harishchandragad fort and beautiful Konkan Kada views.</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sahyadri Budget Trekkers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
