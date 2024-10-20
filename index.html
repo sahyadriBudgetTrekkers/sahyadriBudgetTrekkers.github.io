@@ -4,21 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahyadri Budget Trekkers</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         .hero-section {
-            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            background: url('https://sahyadribudgettrekkers.github.io/images/hero-image.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 20px;
-        }
-        .trek-card img {
-            height: 200px;
-            object-fit: cover;
         }
         .footer {
             background-color: #343a40;
@@ -26,52 +22,40 @@
             padding: 20px 0;
             text-align: center;
         }
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
+        .trek-card img {
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Sahyadri Trekkers</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sahyadri Budget Trekkers</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Upcoming Treks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#upcoming-treks">Upcoming Treks</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <div class="hero-section">
         <h1>Explore the Sahyadris with Us!</h1>
-        <p>Join us on budget-friendly treks and discover the beauty of Maharashtra’s majestic mountains.</p>
-        <a href="#treks" class="btn btn-primary">View Upcoming Treks</a>
-    </section>
+        <p>Join us on budget-friendly treks and explore the beauty of Maharashtra’s majestic mountains.</p>
+        <a href="#upcoming-treks" class="btn btn-primary">View Upcoming Treks</a>
+    </div>
 
-    <!-- Trek Cards Section -->
-    <section id="treks" class="container mt-5">
-        <h2 class="text-center mb-4">Upcoming Treks</h2>
+    <div class="container mt-5" id="upcoming-treks">
+        <h2 class="text-center">Upcoming Treks</h2>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card trek-card mb-4">
-                    <img src="https://example.com/mangi-tungi.jpg" class="card-img-top" alt="Mangi Tungi Trek">
+            <div class="col-md-4">
+                <div class="card trek-card">
+                    <img src="https://sahyadribudgettrekkers.github.io/images/mangitungi.jpg" class="card-img-top" alt="Mangi Tungi Trek">
                     <div class="card-body">
                         <h5 class="card-title">Mangi Tungi Trek</h5>
                         <p class="card-text">Join us for a scenic trek to Mangi Tungi on 8th Nov. Experience breathtaking views!</p>
@@ -79,9 +63,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card trek-card mb-4">
-                    <img src="https://example.com/harishchandragad.jpg" class="card-img-top" alt="Harishchandragad Trek">
+            <div class="col-md-4">
+                <div class="card trek-card">
+                    <img src="https://sahyadribudgettrekkers.github.io/images/harishchandraga.jpg" class="card-img-top" alt="Harishchandragad Trek">
                     <div class="card-body">
                         <h5 class="card-title">Harishchandragad Trek</h5>
                         <p class="card-text">Explore the historic Harishchandragad fort and beautiful Konkan Kada views.</p>
@@ -89,19 +73,62 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card trek-card">
+                    <img src="https://sahyadribudgettrekkers.github.io/images/harischandra.jpg" class="card-img-top" alt="Kalsubai Trek">
+                    <div class="card-body">
+                        <h5 class="card-title">Kalsubai Trek</h5>
+                        <p class="card-text">Reach the highest peak in Maharashtra with us!</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Sahyadri Budget Trekkers. All rights reserved.</p>
+    <div class="container mt-5" id="testimonials">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p class="mb-0">“An amazing experience! The views were breathtaking, and the organization was top-notch.”</p>
+                    <footer class="blockquote-footer">John Doe</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p class="mb-0">“Best trekking group for budget-friendly adventures. Highly recommend!”</p>
+                    <footer class="blockquote-footer">Jane Smith</footer>
+                </blockquote>
+            </div>
         </div>
+    </div>
+
+    <div class="container mt-5" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+
+    <footer class="footer mt-5">
+        <p>&copy; 2024 Sahyadri Budget Trekkers. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
